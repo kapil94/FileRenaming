@@ -7,7 +7,7 @@ date_list=['01','02','03','04','05','06','07','08','09','10','11','12','13','14'
 month_list=['01','02','03','04','05','06','07','08','09','10','11','12']
 months_with_31=['01','03','05','07','08','10','12']
 months_with_30=['04','06','09','11']
-path='/home/kapil/Desktop/Files'
+path='/home/user/Desktop/Files'
 os.chdir(path)
 my_dict={}
 
@@ -15,7 +15,7 @@ my_dict={}
 # To create random sample files with dates in order DD-MM-YYYY
 
 
-dir_path='/home/kapil/Desktop/Files'
+
 random_number=0
 
 file_name=""
@@ -28,7 +28,7 @@ for i in range(0,100):
 			file_name=""
 			continue
 		else:
-			file_obj=open(os.path.join(dir_path,file_name),'x')
+			file_obj=open(os.path.join(path,file_name),'x')
 			file_obj.close()
 		file_name=""
 
@@ -39,7 +39,7 @@ for i in range(0,100):
 			file_name=""
 			continue
 		else:
-			file_obj=open(os.path.join(dir_path,file_name),'x')
+			file_obj=open(os.path.join(path,file_name),'x')
 			file_obj.close()
 		file_name=""
 		
@@ -50,7 +50,7 @@ for i in range(0,100):
 			file_name=""
 			continue
 		else:
-			file_obj=open(os.path.join(dir_path,file_name),'x')
+			file_obj=open(os.path.join(path,file_name),'x')
 			file_obj.close()
 		file_name=""
 	else:
@@ -60,7 +60,7 @@ for i in range(0,100):
 			file_name=""
 			continue
 		else:
-			file_obj=open(os.path.join(dir_path,file_name),'x')
+			file_obj=open(os.path.join(path,file_name),'x')
 			file_obj.close()
 		file_name=""
 
